@@ -27,8 +27,23 @@ const handleUserInput = function (key) {
   if (key === `d`) {
     connection.write("Move: right");
   }
+  //banter buttons
+  if (key === `b`) {
+    connection.write("Say: Boo!");
+  }
+  if (key === `v`) {
+    connection.write("Say: LOL!");
+  }
+  if (key === `c`) {
+    connection.write("Say: Come get me!");
+  }
+
 };
 
 module.exports = {
   setupInput,
 }
+// BANTER COMMANDS
+// c = Come Get Me!
+// v = LOL!
+// b = Boo!
