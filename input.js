@@ -1,3 +1,5 @@
+const { IP, PORT, NAME, UP, DOWN, LEFT, RIGHT, B, V, C } = require("./constants");
+
 let connection;
 
 const setupInput = function (conn) {
@@ -16,26 +18,26 @@ const handleUserInput = function (key) {
     process.exit();
   }
   if (key === `w`) {
-    connection.write("Move: up");
+    connection.write(UP);
   }
   if (key === `a`) {
-    connection.write("Move: left");
+    connection.write(LEFT);
   }
   if (key === `s`) {
-    connection.write("Move: down");
+    connection.write(DOWN);
   }
   if (key === `d`) {
-    connection.write("Move: right");
+    connection.write(RIGHT);
   }
   //banter buttons
   if (key === `b`) {
-    connection.write("Say: Boo!");
+    connection.write(B);
   }
   if (key === `v`) {
-    connection.write("Say: LOL!");
+    connection.write(V);
   }
   if (key === `c`) {
-    connection.write("Say: Come get me!");
+    connection.write(C);
   }
 
 };
@@ -43,7 +45,3 @@ const handleUserInput = function (key) {
 module.exports = {
   setupInput,
 }
-// BANTER COMMANDS
-// c = Come Get Me!
-// v = LOL!
-// b = Boo!
