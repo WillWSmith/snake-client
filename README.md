@@ -14,13 +14,18 @@ Before you can run this client, you will need to be running the server side whic
 - Once you are met with the "Successfully connected to game server" message you can start playing!
 
 ## Controls
-Movement                    Want to banter?
-W Key - Move Up          B - "Boo!"
-A Key - Move Left        C - "Come get me!"
-S Key - Move Down        V - "LOL!"
-D Key - Move Right
+### Movement
++ W Key - Move Up
++ A Key - Move Left
++ S Key - Move Down
++ D Key - Move Right
 
-You can exit the game at any time by pressing Ctrl+C.
+### Want to banter?
++ B Key - "Boo!"
++ C Key - "Come get me!"
++ V Key - "LOL!"
+
+**You can exit the game at any time by pressing Ctrl+C.**
 
 ## Troubleshooting
 
